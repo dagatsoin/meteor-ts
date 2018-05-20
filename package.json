@@ -1,0 +1,29 @@
+{
+  "name": "aaa",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.47",
+    "@babel/runtime": "^7.0.0-beta.47",
+    "meteor-node-stubs": "^0.4.1",
+    "mobx": "^4.2.1",
+    "mobx-react": "^5.1.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "test/main.js"
+  },
+  "devDependencies": {}
+}
